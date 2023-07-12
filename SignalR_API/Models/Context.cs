@@ -10,7 +10,7 @@ namespace SignalR_API.Models
             optionsBuilder.UseSqlServer("server=DESKTOP-JNJNVEQ\\MERTSQL;initial catalog=DbSignalR;integrated security=true");
         }
 
-        DbSet<User> User { get; set; }
-        DbSet<Room> Room { get; set; }
+        public DbSet<User> Users { get; set; }
+        public DbSet<Room> Rooms { get; set; }
     }
 }
